@@ -1,0 +1,16 @@
+{
+  "buildCommand": "echo 'Static site'",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    },
+    {
+      "source": "/(?!.*\\..*|_next|api)(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

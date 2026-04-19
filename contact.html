@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Contact Short Road for inquiries about our e-learning platform, courses, and support.">
+    <meta name="keywords" content="Contact, E-learning, Support, Short Road">
+    <meta name="author" content="Short Road">
+    <title>Contact Us - Short Road</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href ="contact.css">
+</head>
+<body>
+    <header id="header" aria-labelledby="header-title">
+        <div class="container">
+            <img src="SHORTROAD.jpg" alt="Short Road Logo" class="logo">
+            <nav role="navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" aria-labelledby="main-title">
+        <section id="contact" class="section" style="padding: 50px 0;">
+            <div class="container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <!-- Contact Form Section -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 id="main-title">Contact Us</h2>
+                    <form action="#" method="POST" class="contact-form" style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        
+                        <!-- Name Section -->
+                        <div style="margin-bottom: 20px;">
+                            <label for="name" style="display: block; font-weight: bold; margin-bottom: 5px;">Name:</label>
+                            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                        </div>
+
+                        <!-- Email Section -->
+                        <div style="margin-bottom: 20px;">
+                            <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Email:</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                        </div>
+
+                        <!-- Message Section -->
+                        <div style="margin-bottom: 20px;">
+                            <label for="message" style="display: block; font-weight: bold; margin-bottom: 5px;">Message:</label>
+                            <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Contact Details Section -->
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <h3 id="contact-details">Get in Touch</h3>
+                    <p>Email: inferno9120@gmail.com</p>
+                    <p>Phone: +91 91207 93395</p>
+                    <p>Address: Pranveer Singh Institute of Technology, Kanpur, Uttar Pradesh, India</p>
+                    <img src="contactusimage.png" alt="Our Location Map" style="max-width: 100%; height: 200px; border-radius: 10px; margin-top: 20px;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" aria-labelledby="footer-title">
+        <div class="container">
+            <p id="footer-title">&copy; 2024 Short Road. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Visit our Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Visit our Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Visit our LinkedIn">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

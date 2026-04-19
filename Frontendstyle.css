@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a2e; /* Match the dark blue background from the logo */
+  color: #f5f5f5; /* Light text for contrast */
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #0f3460;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #e94560; /* Vibrant pink-red for the title */
+}
+
+/* Flowchart Container */
+.flowchart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Branch Styling */
+.branch {
+  background: linear-gradient(145deg, #662d91, #e94560); /* Gradient matching logo colors */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.branch h2 {
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.branch ul {
+  list-style: none;
+  padding: 0;
+}
+
+.branch ul li {
+  background: #1a1a2e;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #e94560; /* Vibrant pink */
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.branch ul li:hover {
+  background: #f5f5f5;
+  color: #1a1a2e;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .flowchart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .branch {
+    width: 90%;
+  }
+}

@@ -1,0 +1,166 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0e0b29;
+    color: #ffffff;
+    line-height: 1.6;
+    background-image: url('ml.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(14, 11, 41, 0.8); /* Slight opacity for better background visibility */
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.animated-heading {
+    font-size: 3em;
+    font-weight: 700;
+    color: #f39cff;
+    margin-bottom: 10px;
+    animation: fadeInAndZoom 1.5s ease-out, slideIn 1s ease-out;
+}
+
+/* Animation for Heading */
+@keyframes fadeInAndZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+/* Flowchart Styles */
+.flowchart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.flow-item {
+    background-color: #1a153a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s ease-in-out;
+    text-align: left;
+    animation: slideInStep 1s ease-out forwards;
+}
+
+/* Sequential delay for animations */
+.flow-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.flow-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.flow-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.flow-item:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.flow-item:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.flow-item:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.flow-item:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+@keyframes slideInStep {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.flow-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.flow-item h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #f39cff;
+}
+
+.flow-item p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0e0b29;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 0.9em;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Explore a variety of coding languages and cutting-edge technologies with Short Road's comprehensive courses.">
+    <meta name="keywords" content="courses, coding languages, technologies, e-learning, tech education">
+
+    <title>Courses - Short Road</title>
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="coursestyle.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="SHORTROAD.jpg" alt="Short Road - E-learning Platform Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Master Coding and Technology</h1>
+            <p>Empower yourself with in-demand skills through Short Road's curated courses.</p>
+            <a href="#courses" class="btn">Explore Our Courses</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h1>Our Courses</h1>
+        <p>Explore our extensive list of programming languages and cutting-edge technologies:</p>
+        <div class="container">
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card" data-aos="fade-up">
+                    <h2>Python</h2>
+                    <p>Learn Python, a versatile programming language used for web development, data analysis, and more.</p>
+                    <a href="python-roadmap.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 2 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Backend Development</h2>
+                    <p>Master sql, databases the language that powers dynamic and interactive websites.</p>
+                    <a href="back.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 3 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Machine Learning</h2>
+                    <p>Dive into machine learning concepts and build intelligent systems.</p>
+                    <a href="machine-learning-roaadmap.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 4 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <h2>Data Science</h2>
+                    <p>Understand data science techniques and tools for analyzing large datasets.</p>
+                    <a href="data sci.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 5 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                    <h2>Frontend Development</h2>
+                    <p>Build responsive and dynamic websites using HTML, CSS, and JavaScript.</p>
+                    <a href="Frontend.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 6 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="500">
+                    <h2>Cybersecurity</h2>
+                    <p>Learn how to protect systems and data from cyber threats.</p>
+                    <a href="cybersecurity-roadmap.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 7 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="600">
+                    <h2>Blockchain</h2>
+                    <p>Explore blockchain technology and its applications in various industries.</p>
+                    <a href="blockchain-roadmap.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 8 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="700">
+                    <h2>Artificial Intelligence</h2>
+                    <p>Get hands-on with AI concepts and develop intelligent applications.</p>
+                    <a href="ai-roadmap.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+                <!-- Course Card 9 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="800">
+                    <h2>Cloud Computing</h2>
+                    <p>Understand cloud services and architectures for deploying applications.</p>
+                    <a href="cloud-computing-roadmap.html" class="btn">Learn More</a> <!-- Updated Link -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Short Road. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize AOS (Animate On Scroll)
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+            });
+
+            // Dynamic Year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>

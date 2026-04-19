@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Short Road</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="800407473804-si9r6f1cdcd7a3736cc05af8k601.apps.googleusercontent.com">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="SHORTROAD.jpg" alt="Short Road Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="login">
+        <h1>Login to Your Account</h1>
+        <div class="container">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Short Road. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId());
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail());
+            var id_token = googleUser.getAuthResponse().id_token;
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
